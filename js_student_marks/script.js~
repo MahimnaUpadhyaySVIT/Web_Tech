@@ -1,0 +1,22 @@
+// Declaring GLOBAL variables to use throughout program
+var form = document.getElementById("student_form");
+var form_data = [];
+
+form.addEventListener('submit', function(event) {
+	event.preventDefault();
+	
+	var student_id = String(document.getElementById("student_id_input").value);
+	var student_name = String(document.getElementById("student_name_input").value);
+	var select_subject = String(document.getElementById("select_subject").value);
+	var select_subject_code = parseInt(document.getElementById("select_subject_code").value);
+	var internal_marks = parseInt(document.getElementById("internal_marks_input").value);
+	var external_marks = parseInt(document.getElementById("external_marks_input").value);
+
+	alert("Details has been submitted!!");
+
+	var total_marks = internal_marks + external_marks;
+
+	form_data = [student_id, student_name, select_subject, select_subject_code, internal_marks, external_marks, total_marks];
+});
+
+document.getElementById("student_id").innerHTML = form_data[student_id];

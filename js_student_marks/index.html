@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="stylesheet" href="./style.css" />
+	<title>Student Marks</title>
+</head>
+
+<body>
+	<div class="container">
+		<div class="Form_container">
+			<form id="student_form">
+				<label>Student ID</label>
+				<input type="text" id="student_id_input" />
+
+				<label>Student Name</label>
+				<input type="text" id="student_name_input" />
+
+				<select id="select_subject">
+					<option>Select Subject</option>
+					<option value="maths">MATHS</option>
+					<option value="fco">FCO</option>
+					<option value="c">C</option>
+					<option value="java">Java</option>
+					<option value="wt">WT</option>
+				</select>
+
+				<select id="select_subject_code">
+					<option>Select Subject Code</option>
+					<option value="1234">12334</option>
+					<option value="5678">5678</option>
+					<option value="9012">9012</option>
+					<option value="3456">3456</option>
+					<option value="7890">7890</option>
+				</select>
+
+				<label>Internal Marks</label>
+				<input type="number" id="internal_marks_input" />
+
+				<label>External Marks</label>
+				<input type="number" id="external_marks_input" />
+
+				<button id="form_btn" type="submit">Add Details</button>
+			</form>
+		</div>
+
+		<div class="table_container">
+			<table>
+				<tr>
+					<td>Student ID: </td>
+					<td id="student_id"></td>
+				</tr>
+
+				<tr>
+					<td>Student Name: </td>
+					<td id="student_name"></td>
+				</tr>
+
+				<tr>
+					<th colspan="5">
+						<h2>MCA SEM-1 MARKSHEET</h2>
+					</th>
+				</tr>
+
+				<tr>
+					<th>Subject Code</th>
+					<th>Subject Name</th>
+					<th>Internal Marks</th>
+					<th>External Marks</th>
+					<th>Total</th>
+				</tr>
+
+				<tr>
+					<td id="subject_code"></td>
+					<td id="subject_name"></td>
+					<td id="internal_marks"></td>
+					<td id="external_marks"></td>
+					<td id="total"></td>
+				</tr>
+			</table>
+		</div>
+	</div>
+
+	<script src="./script.js"></script>
+</body>
+
+</html>

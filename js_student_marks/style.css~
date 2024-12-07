@@ -1,0 +1,115 @@
+:root {
+	--text: #060307;
+	--background: #f0f0f0;
+	--primary: #6a1b9a;
+	--secondary: #9575cd;
+	--accent: #7e57c2;
+	--button-hover: #512da8;
+  }
+  
+  * {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+  }
+  
+  body {
+	background-color: var(--background);
+	color: var(--text);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+  }
+  
+  .container {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: auto;
+	min-height: 500px;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--background);
+  }
+  
+  .Form_container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 20px;
+	box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .Form_container form {
+	display: flex;
+	flex-direction: column;
+	width: 400px;
+	padding: 20px;
+	gap: 15px;
+	background-color: var(--primary);
+	color: white;
+	border-radius: 15px;
+	box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.15);
+	transition: transform 0.2s ease-in-out;
+  }
+  
+  .Form_container form:hover {
+	transform: scale(1.02); 
+  }
+  
+  .Form_container label {
+	font-weight: bold;
+	background-color: transparent;
+	color: white;
+  }
+  
+  .Form_container input,
+  .Form_container select {
+	padding: 10px;
+	width: 100%;
+	border-radius: 20px;
+	border: 2px solid var(--secondary);
+	background-color: #ffffff;
+	transition: border-color 0.2s ease;
+  }
+  
+  .Form_container input:focus,
+  .Form_container select:focus {
+	border-color: var(--accent);
+	outline: none;
+  }
+  
+  .Form_container button {
+	padding: 12px;
+	width: 100%;
+	border-radius: 25px;
+	border: none;
+	background-color: var(--accent);
+	color: white;
+	font-size: 1rem;
+	font-weight: bold;
+	cursor: pointer;
+	transition: background-color 0.3s ease, transform 0.2s ease; 
+  }
+  
+  .Form_container button:hover {
+	background-color: var(--button-hover);
+	transform: translateY(-3px);
+  }
+  
+  .Form_container button:active {
+	transform: translateY(1px);
+  }
+  
+  .table_container{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: auto;
+	justify-content: center;
+	align-items: center;
+	padding: 15px;
+  }
