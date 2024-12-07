@@ -2,6 +2,8 @@
 
 <p id="description">All web tech practical's in one repo.</p>
 
+![Web_Tech](https://github.com/user-attachments/assets/14f4b99c-e4d8-4c05-be2b-f789852e47d1)
+
 <h2>🛠️ Installation Steps:</h2>
 
 <p>1. Clone the Git Repo</p>
