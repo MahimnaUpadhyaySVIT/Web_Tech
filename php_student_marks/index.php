@@ -6,7 +6,8 @@
 
 	<body>
 		<div class="container">
-			<div class="form_container">				
+			<div class="form_container">
+               <h1>Student Details</h1>
 			   <form method="POST">
 				<input
 				  type="text"
@@ -55,7 +56,7 @@
 			</div>
 		</div>
 
-
+      <div class="result_container">
 		<?php
 
 			if(isset($_POST["form_button"])){			      
@@ -66,16 +67,17 @@
 				$internal_marks = $_POST["internal_marks"];
 				$external_marks = $_POST["external_marks"];
 
-				echo $student_id;
-				echo $student_name;
-				echo $subject_name;
-				echo $subject_code;
-				echo $internal_marks;
-				echo $external_marks;
+				echo "$student_id <br>";
+				echo "$student_name <br>";
+				echo "$subject_name <br>";
+				echo "$subject_code <br>";
+				echo "$internal_marks <br>";
+				echo "$external_marks <br>";
 			} else {
 				echo "Fill up Details";
 			}
 		?>
+      </div>
 
 	</body>
 
