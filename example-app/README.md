@@ -60,4 +60,22 @@ DB_PASSWORD=
 
 Replace `DB_USERNAME` and `DB_PASSWORD` with your database credentials if they are different.
 
-Happy coding!
+5. Implementing the basic navigation
+   
+   Step I. Make home.blade.php, about.blade.php, contact.blade.php files in resources/views (for references check out my blades files). \
+   Step II. Edit routes/web.php file. \
+   Step III. Add these codes to add url:-
+   
+   ```bash
+    Route::get('/', function () {
+    return view('home');
+    });
+
+    Route::get('/aboutus', function () {
+    return view('about');
+    });
+
+    Route::get('/contactus', function () {
+    return view('contact');
+    });
+   ```
