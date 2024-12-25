@@ -17,9 +17,22 @@ git clode https://github.com/MahimnaUpadhyaySVIT/Web_Tech.git
 ```
 winget install --id ApacheFriends.Xampp.8.2
 ```
+<p>3. Install Composer via PowerShell</p>
 
-  
-  
+```
+Set-Content composer.bat '@php "%~dp0composer.phar" %*'
+```
+
+<p>4. Install Nodejs via their website</p>
+
+  [Node Js](https://nodejs.org/en/download/prebuilt-installer)
+
+<p>5. Install Angular via CMD</p>
+
+```
+npm install -g @angular/cli
+```
+
 <h2>💻 Built with</h2>
 
 Technologies used in the project:
