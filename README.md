@@ -1,6 +1,8 @@
 <h1 align="center" id="title">Web Technology Practicals</h1>
 
-<p id="description">All web tech practical's in one repo.</p>
+<p id="description">All web tech practical's in one repo. In some folder CSS might not be applied and in some it might be applied. I gave priority to functionalities.</p>
+
+![Web_Tech](https://github.com/user-attachments/assets/14f4b99c-e4d8-4c05-be2b-f789852e47d1)
 
 <h2>🛠️ Installation Steps:</h2>
 
